@@ -12,5 +12,11 @@
 
 
 
+## 集成mybatis
 
+[博客参考](https://www.cnblogs.com/vipstone/p/9636678.html)  
+
+
+* 注解实现反填主键到对象之中
+ <https://blog.csdn.net/ylforever/article/details/79191182>
 

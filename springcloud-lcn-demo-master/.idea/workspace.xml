@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecbee967-7b47-4146-8f83-e805573708e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ecbee967-7b47-4146-8f83-e805573708e2" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/jpa-demo/springcloud-jpa-demo1/target/" />
     <ignored path="$PROJECT_DIR$/sharding-jdbc-demo/springcloud-shardingjdbc-mybatis-demo2/target/" />
     <ignored path="$PROJECT_DIR$/jdbc-demo/springcloud-jdbc-demo4/target/" />
@@ -237,8 +235,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="x" value="576" />
+    <option name="y" value="47" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
