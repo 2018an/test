@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+		PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+		"http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<!--suppress ALL -->
+<generatorConfiguration>
+
+	<context id="MysqlTables" targetRuntime="MyBatis3">
+
+		<!--设置表名标识-->
+		<property name="autoDelimitKeywords" value="true"/>
+		<property name="beginningDelimiter" value="`"/>
+		<property name="endingDelimiter" value="`"/>
+		<plugin type="SerializablePlugin"/>
+		<plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+		<commentGenerator type="MyCommentGenerator">
+			<property name="suppressDate" value="true"/>
+			<!--<property name="suppressAllComments" value="true" />-->
+		</commentGenerator>
+
+		<!--<jdbcConnection driverClass="com.mysql.jdbc.Driver"-->
+						<!--connectionURL="jdbc:mysql://127.0.0.1/nc2017_log"-->
+						<!--userId="root"-->
+						<!--password="1234">-->
+		<!--</jdbcConnection>-->
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/db_exchange_child"
+                        userId="root"
+                        password="123456">
+        </jdbcConnection>
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false"/>
+		</javaTypeResolver>
+
+		<javaModelGenerator targetPackage="com.qnche.nc.api.systemapi.common.module.DO" targetProject="src/main/java">
+			<property name="enableSubPackages" value="true"/>
+			<property name="trimStrings" value="true"/>
+		</javaModelGenerator>
+
+
+		<sqlMapGenerator targetPackage="com.qnche.nc.api.systemapi.dao.mapping.config" targetProject="src/main/java">
+			<property name="enableSubPackages" value="true"/>
+		</sqlMapGenerator>
+
+		<javaClientGenerator type="XMLMAPPER" targetPackage="com.qnche.nc.api.systemapi.dao.mapping.config"
+							 targetProject="src/main/java">
+			<property name="enableSubPackages" value="true"/>
+		</javaClientGenerator>
+
+
+		<table tableName="t_user_child" domainObjectName="userChild" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
+               enableUpdateByExample="false" >
+			<property name="useActualColumnNames" value="true"/>
+		</table>
+
+
+	</context>
+
+
+</generatorConfiguration>
